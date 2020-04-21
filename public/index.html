@@ -1,0 +1,71 @@
+<html lang="pt-br">
+ <head>
+   <title>Hackathon Desafio COVID-19 IFSULDEMINAS</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
+ </head>
+
+ <body>
+   <header>
+     <img src="src/logo.png">
+     <h1>SISTEMA PARA REGISTRO DE IDEIAS / PROJETOS E INGRESSO EM EQUIPES</h1>
+   </header>
+
+   <main>
+    <form id="user-form">
+      <label for="name">Nome do Autor</label>
+      <input type="text" id="name" required />
+      <label for="description">Descrição da Ideia / Projeto</label>
+      <textarea id="description" required></textarea>
+      <div>
+        <button type="button" id="stop-button">Encerrar</button>
+        <input type="submit" value="Salvar" />
+      </div>
+    </form>
+
+    <hr />
+
+    <div class="table">
+      <div class="table-header">
+        <span>ID</span>
+        <span>Autor</span>
+        <span>Descrição da Ideia</span>
+        <span></span>
+      </div>
+
+      <div id="table-items"></div>
+    </div>
+   </main>
+
+   <div class="modal-background" id="user-modal">
+    <i class="material-icons" id="user-modal-exit">clear</i>
+     <div class="modal">
+       <form id="person-form">
+          <label for="fullname">Nome Completo</label>
+          <input type="text" id="fullname" required />
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" required />
+          <input type="submit" value="Ingressar" />       
+       </form>
+     </div>
+   </div>
+
+   <div class="modal-background" id="stop-modal">
+    <i class="material-icons" id="stop-modal-exit">clear</i>
+    <div class="modal">
+      <form id="stop-form">
+         <label for="password">Senha</label>
+         <input type="password" id="password" required />
+         <input type="submit" value="Encerrar" />       
+      </form>
+    </div>
+  </div>
+  
+   <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+   <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
+   <script src="js/modal.js"></script>
+   <script src="js/script.js"></script>
+ </body>
+</html>

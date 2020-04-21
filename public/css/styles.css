@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Hussar';
+  src: url(../src/HussarBd.otf);
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(../src/Assistant-Regular.ttf);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Assistant;
+}
+
+body {
+  padding: 12px;
+  width: calc(100% - 24px);
+}
+
+header, main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  font-family: 'Hussar';
+  margin-top: 8px;
+  text-align: center;
+  color: #272526;
+}
+
+main {
+  width: 100%;
+}
+
+header, main {
+  max-width: 900px;
+}
+
+header img {
+  width: 80%;
+  max-width: 800px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input[type="text"], input[type="number"], form input[type="password"], form textarea {
+  width: 100%;
+  height: 30px;
+  font-family: Assistant;
+  font-size: 18px;
+  padding-left: 4px;
+  color: gray;
+}
+
+form textarea {
+  height: 150px;
+  resize: none;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+form input[type="submit"], form button {
+  height: 35px;
+  font-size: 18px;
+  border: 0;
+  font-family: Assistant;
+  font-weight: bold;
+  border-radius: 12px;
+  min-width: 100px;
+  transition: 0.5s filter;
+  margin-top: 12px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+form input[type="submit"] {
+  color: white;
+  transition: 0.5s all;
+  background-color: #90bf4f;
+}
+
+hr {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+}
+
+.table-header, .table-data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-header span {
+  flex: 1;
+  margin-left: 2px;
+  margin-right: 2px;  
+  font-weight: bold;
+}
+
+.table-item {
+  border: 1px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.table-data span {
+  flex: 1;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: gray;
+}
+
+.table-data button {
+  flex: 1;
+  margin-left: 8px;
+  color: white;
+  padding: 6px;
+  background-color: #5f9ad4;
+  font-family: Assistant;
+  font-size: 18px;
+  border-radius: 12px;
+  transition: 0.5s filter;
+  cursor: pointer;  
+  transition: 0.5s all;
+  border: 0;
+}
+
+.table-team-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-team {
+  color: white;
+  padding: 6px;
+  background-color: #90bf4f;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  /*display: flex;*/
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.modal-background .material-icons {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal {
+  background: white;
+  padding: 8px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.modal form {
+  margin-bottom: 12px;
+}
+
+.button-disabled {
+  background-color: gray !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+input[type="submit"]:hover, button:hover {
+  filter: brightness(90%);
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
