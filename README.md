@@ -4,11 +4,11 @@ Sistema utilizado para cadastro de ideias e formação de equipes durante o <a h
 
 ## Screenshots
 <div>
-  <img src="https://raw.githubusercontent.com/Windows87/sistema-hackathon-covid19/master/screenshots/desktop-1.png" width="50%">
-  <img src="https://raw.githubusercontent.com/Windows87/sistema-hackathon-covid19/master/screenshots/desktop-2.png" width="50%">
+  <img src="https://raw.githubusercontent.com/Windows87/sistema-hackathon-covid19/master/screenshots/desktop-1.png" width="45%">
+  <img src="https://raw.githubusercontent.com/Windows87/sistema-hackathon-covid19/master/screenshots/desktop-2.png" width="45%">
 </div>
 <div>
-  <img src="https://raw.githubusercontent.com/Windows87/sistema-hackathon-covid19/master/screenshots/desktop-3.png" width="50%">
+  <img src="https://raw.githubusercontent.com/Windows87/sistema-hackathon-covid19/master/screenshots/desktop-3.png" width="45%">
   <img src="https://raw.githubusercontent.com/Windows87/sistema-hackathon-covid19/master/screenshots/mobile-1.png" width="20%">
 </div>
 
